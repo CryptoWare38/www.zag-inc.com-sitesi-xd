@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura.woff2') format('woff2'), url('Futura.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+HTML,
+BODY {
+    height: 100%;
+}
+
+BODY {
+    background: black;
+    font-family: 'Futura';
+    font-weight: 500;
+    font-style: normal;
+}
+
+A.active {
+    font-weight: bold;
+}
+
+.navbar,
+desktop-nav {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.slider {
+    background: #333;
+    min-height: calc(100% - 94px);
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#logo {
+    background: url(../img/logo.png) no-repeat center center;
+    background-size: contain;
+    width: 150px;
+    height: 70px;
+}
+
+#content {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    transition: opacity 0.25s ease-in-out;
+    opacity: 1;
+}
+
+#content.fade-out {
+    opacity: 0;
+}
+
+#splash {
+    background: rgba(0, 0, 0, 0.6);
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100%;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#splash IMG {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+#splash.collapse {
+    display: none;
+}
+
+#sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 430px;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#sidebar A {
+    color: white;
+}
+
+#sidebar H2 {
+    color: white;
+    margin-top: 100px;
+    padding: 5px 30px 5px 30px;
+    font-size: 1.4rem;
+    background: #040000;
+}
+
+#sidebar H3 {
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 30px;
+}
+
+#sidebar P {
+    color: #aaa;
+    padding: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.navbar-toggler {
+    margin-top: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.desktop-nav LI {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.desktop-nav LI A {
+    display: block;
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    color: white !important;
+    text-transform: uppercase;
+    transition: linear 0.1s all;
+}
+
+#navbarMobile LI A {
+    padding-left: 15px;
+}
+
+.desktop-nav LI A:hover {
+    text-shadow: 0px 0px 2px white;
+}
+
+#nav-left .nav,
+#nav-right .nav {
+    width: 100% !important;
+}
+
+#nav-left LI {
+    width: 33%;
+}
+
+#nav-right LI {
+    width: 33%;
+}
+
+.contact {
+    font-size: 1rem;
+    margin: 40px;
+}
+
+.fp {
+    width: 80%;
+    height: 90%;
+    text-align: justify;
+    margin: 20px;
+    font-size: 0.8rem;
+    text-transform: none;
+}
+
+.footer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: none;
+}
+
+.footer A {
+    color: white;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 4px 2px;
+    margin-right: 4px;
+}
+
+@media screen and (min-width: 992px) {
+    .footer {
+        display: block;
+    }
+    .navbar {
+        height: 140px;
+    }
+    .slider {
+        min-height: calc(100% - 140px);
+    }
+    #logo {
+        width: 260px;
+        height: 120px;
+        position: relative;
+        bottom: 0px;
+        background: url(../img/logo.png) no-repeat center center;
+        background-size: contain;
+    }
+    .contact {
+        padding: 30px;
+        border: solid 1px #999;
+        border-radius: 20px;
+    }
+    .contact STRONG {
+        font-size: 1.2rem;
+    }
+}
+
+#bal {
+    width: 100%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Questrial', sans-serif;
+}
+
+#bal .bal-bg {
+    width: 100%;
+    /* background-image: url('../img/toys inside.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+} */
+}
+
+#bal .bal-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.6rem;
+}
+
+#bal .bal-footer A {
+    color: white;
+}
+
+#bal .bal-bg IMG {
+    margin-top: 30px;
+}
+
+#bal .bal-bg DIV {
+    padding: 15px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#bal #step1 {
+    font-size: 0.75rem;
+}
+
+#bal #step1 .btn {
+    max-width: 100%;
+    white-space: normal;
+}
+
+#bal #step1 UL {
+    text-align: left;
+}
+
+#bal #step1 UL LI {
+    color: white;
+}
+
+#bal .bal-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 30px;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+#bal H1 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+#bal H4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+#bal SELECT {
+    width: auto;
+    max-width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+#bal #step2 {
+    margin: 40px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    #bal .bal-bg DIV {
+        line-height: 2;
+        font-size: 1.5rem;
+    }
+    #bal H1 {
+        font-size: 1.3rem;
+    }
+    #bal .bal-content {
+        font-size: 0.8rem;
+    }
+    label {
+        overflow-x: auto !important;
+    }
+}
